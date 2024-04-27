@@ -440,6 +440,9 @@ httplug:
             config:
                 defaults:
                     timeout: 10
+                    proxy:
+                        http: "%http_proxy%"
+                        https: "%https_proxy%"
             plugins: ['httplug.plugin.logger']
     discovery:
         client: false
